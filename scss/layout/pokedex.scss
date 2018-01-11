@@ -1,7 +1,8 @@
 .pokedex-img{
   position: relative;
 }
-.pokedex{
+
+.pokedex {
   #sprite-output{
     width: 200px;
     height: 140px;
@@ -12,6 +13,9 @@
     left: 85px;
     top: 175px;
     z-index: 3;
+    & img {
+      width: 150px;
+    }
   }
   #poke-output{
     position: absolute;
@@ -28,6 +32,14 @@
     position: absolute;
     left: 483px;
     top: 285px;
+    & label {
+      color: white;
+      font-weight: normal;
+      font-family: monospace;
+    }
+    & button {
+      margin-top: 10px;
+    }
   }
 }
 
@@ -40,4 +52,10 @@
   &::placeholder {
     color: $lime;
   }
+}
+
+#poke-team {
+  border: 1px solid black;
+  width: 500px;
+  height: 100px;
 }
