@@ -2,10 +2,10 @@ import { getData } from './../js/scripts.js';
 
 $(document).ready(function() {
   $('#button').click(function() {
-    let search = $('#search2').val();
-    $('#search2').val("");
-    getData(search, function(response) {
-      $('#poke-output').text(`Your result ${search} is ${response.name}`);
+    let name = $('#search1').val();
+    $('#search1').val("");
+    getData(name, function(response) {
+      $('#poke-output').text(`Your search for ${name} found ${response.name}!`);
       $('#sprite-output').empty('');
       $('#sprite-output').append(`<img src="${response.sprites.front_default}">`);
     }, function() {

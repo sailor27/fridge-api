@@ -1,10 +1,7 @@
 .pokedex-img{
   position: relative;
-  border: 1px blue dashed;
 }
-
 .pokedex{
-
   #sprite-output{
     width: 200px;
     height: 140px;
@@ -16,7 +13,6 @@
     top: 175px;
     z-index: 3;
   }
-
   #poke-output{
     position: absolute;
     left: 455px;
@@ -35,14 +31,13 @@
   }
 }
 
-
-
 #search1, #search2{
   width: 100%;
   margin: 7px;
   background-color: $black;
+  font-family: monospace;
+  color: $lime;
   &::placeholder {
-    font-family: monospace;
     color: $lime;
   }
 }
