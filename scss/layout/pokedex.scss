@@ -4,16 +4,23 @@
 }
 
 .pokedex{
-  border: 5px black dashed;
+
   position: absolute;
-  left: 50%;
-  top: 50%;
+  // width: 35%;
+  left: 483px;
+  top: 285px;
+}
+
+#poke-form{
+
+
+
 }
 
 
 #search1, #search2{
-  width: 80%;
-  // margin: 7px;
+  width: 100%;
+  margin: 7px;
   background-color: $black;
   &::placeholder {
     font-family: monospace;
