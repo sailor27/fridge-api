@@ -5,17 +5,34 @@
 
 .pokedex{
 
-  position: absolute;
-  // width: 35%;
-  left: 483px;
-  top: 285px;
+  #sprite-output{
+    width: 200px;
+    height: 140px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 85px;
+    top: 175px;
+  }
+
+  #poke-output{
+    position: absolute;
+    left: 455px;
+    width: 235px;
+    top: 195px;
+    // border: 2px white dashed;
+    color: $lime;
+    background-color: $black;
+    font-family: monospace;
+    }
+  #poke-form{
+    position: absolute;
+    left: 483px;
+    top: 285px;
+  }
 }
 
-#poke-form{
-
-
-
-}
 
 
 #search1, #search2{
