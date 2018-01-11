@@ -1,4 +1,4 @@
-export function getData(search, hanky, bob){
+export function getData(search){
     $.ajax({
       url: `http://pokeapi.co/api/v2/pokemon/${search}/`,
       type: 'GET',
@@ -6,10 +6,10 @@ export function getData(search, hanky, bob){
         format: 'json'
       },
       success: function(response) {
-        hanky(response);
+        $('.solution').text(`Your result ${search} is ${response.name}`);
       },
       error: function() {
-        bob();
+        $('.solution').text("There was an error processing your request. Please try again.");
       }
     });
   }
