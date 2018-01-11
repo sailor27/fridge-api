@@ -14,6 +14,7 @@
     justify-content: center;
     left: 85px;
     top: 175px;
+    z-index: 3;
   }
 
   #poke-output{
@@ -25,6 +26,7 @@
     color: $lime;
     background-color: $black;
     font-family: monospace;
+    z-index: 3;
     }
   #poke-form{
     position: absolute;

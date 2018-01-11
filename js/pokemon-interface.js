@@ -2,13 +2,14 @@ import { getData } from './../js/scripts.js';
 
 $(document).ready(function() {
   $('#button').click(function() {
-    let search = $('#search').val();
-    $('#search').val("");
+    let search = $('#search2').val();
+    $('#search2').val("");
     getData(search, function(response) {
-      $('.solution').append(`Your result ${search} is ${response.name}`);
-      $('.solution').append(`<img src="${response.sprites.front_default}">`);
+      $('#poke-output').text(`Your result ${search} is ${response.name}`);
+      $('#sprite-output').empty('');
+      $('#sprite-output').append(`<img src="${response.sprites.front_default}">`);
     }, function() {
-      $('.solution').text("There was an error processing your request. Please try again.");
+      $('#poke-output').text("There was an error processing your request. Please try again.");
     });
   });
 });
