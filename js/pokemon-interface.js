@@ -9,14 +9,12 @@ $(document).ready(function() {
       $('#poke-output').text(`Your search for ${name} found ${response.name}!`);
       $('#sprite-output').empty('');
       $('#sprite-output').append(`<img src="${response.sprites.front_default}">`);
+      $('#type-output').text(`${response.types[0].type.name}`);
       if (document.getElementById('team-check').checked){
         $('#poke-team').append(`<img src="${response.sprites.front_default}">`);
       };
     }, function() {
       $('#poke-output').text("There was an error processing your request. Please try again.");
     });
-  });
-  $('#poke-team').children('img').click(function() {
-    console.log('test');
   });
 });
